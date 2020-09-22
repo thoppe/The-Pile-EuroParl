@@ -5,6 +5,7 @@ import jsonlines
 
 f_save = "EuroParliamentProceedings_1996_2011.jsonl"
 
+
 def process_tag(original_tag):
     tag = original_tag.strip(">").strip("<")
 
@@ -37,11 +38,11 @@ def compute(f0):
             text = FIN.read()
     except:
         print(f"Failed to open {f0}")
-        return False
+        return None
 
     # Skip short sections (no usable text)
     if len(text) < 200:
-        return False
+        return None
 
     parsed_text = []
 
@@ -67,4 +68,5 @@ P = Pipe(source, prefilter=False)(compute, -1)
 
 with jsonlines.open(f_save, "w") as FOUT:
     for row in P:
-        FOUT.write(row)
+        if row is not None:
+            FOUT.write(row)
