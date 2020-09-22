@@ -1,8 +1,5 @@
 # The-Pile-EuroParl
 
-Notes: Failed to open txt/pl/ep-09-10-22-009.txt
-
-Parse, and filter data from . Data-ready for The-Pile.
 Download, parse, and filter the [European Parliament Proceedings](http://www.statmt.org/europarl/), data-ready for [The-Pile](https://github.com/EleutherAI/The-Pile).
 
 The Europarl parallel corpus is extracted from the proceedings of the European Parliament. It includes versions in 21 European languages: Romanic (French, Italian, Spanish, Portuguese, Romanian), Germanic (English, Dutch, German, Danish, Swedish), Slavik (Bulgarian, Czech, Polish, Slovak, Slovene), Finni-Ugric (Finnish, Hungarian, Estonian), Baltic (Latvian, Lithuanian), and Greek.
@@ -21,7 +18,7 @@ Is reduced to
 
     Pronk
 
-Extremely short files (<200 chracters) are removed as they did not contain useful language modeling text. No other filtering was done. 
+Extremely short files (<200 chracters) are removed as they did not contain useful language modeling text. A single file `txt/pl/ep-09-10-22-009.txt` fails to open with UTF-8 encoding and is skipped. No other filtering was done. 
 
      ✔ Saved to EuroParliamentProceedings_1996_2011.jsonl
      ℹ Saved 187,072 articles
