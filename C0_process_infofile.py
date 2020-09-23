@@ -112,6 +112,8 @@ with open(f_info, "w") as FOUT:
     FOUT.write(js)
 
 print(js)
+text = info["sample_data"]["text"].strip()
+text = '> ' + '\n> '.join(text.split('\n'))
 
 # Now build a nice markdown version of the datafile
 
@@ -120,6 +122,7 @@ MD = f'''
 
 | Key             | Value |
 | ---             | ---:   |
+| Reference URL   | {info["url"]} |
 | Uncompressed file size | {info["file_information"]["uncompressed"]["size"]:,} |
 | Year range | {info["min_year"]} - {info["max_year"]} |
 | Document count  | {info["corpus_statistics"]["total_documents"]:,} |
@@ -129,7 +132,7 @@ MD = f'''
 ### Sample Text (found at row {sample_row_n})
 
 ```text
-{info["sample_data"]["text"]}
+{info["sample_data"]["text"].strip()}
 ```
 
 ### Sample meta information (found at row {sample_row_n})

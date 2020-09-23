@@ -3,6 +3,7 @@
 
 | Key             | Value |
 | ---             | ---:   |
+| Reference URL   | http://www.statmt.org/europarl/ |
 | Uncompressed file size | 4,940,726,841 |
 | Year range | 1996 - 2011 |
 | Document count  | 69,814 |
@@ -23,7 +24,6 @@ Astrid Lulling
 - (FR) Madam President, as Quaestor of this Parliament, I would like to draw your attention to the fact that the route to the Parliament entrance is blocked on one side by riot police. They are not allowing official cars to enter. If some Members arrive late because they have to make another detour, they should not be penalised if they cannot take part in the voting.
 President
 Mrs Lulling, clearly this will be taken into account, because some Members are having difficulty in being admitted to Parliament.
-
 ```
 
 ### Sample meta information (found at row 20003)
