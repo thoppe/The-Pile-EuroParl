@@ -1,22 +1,19 @@
 import jsonlines
 import json
+import configparser
 from tqdm import tqdm
 from pathlib import Path
 import hashlib
 import datetime
 
 """
-Update these lines for the dataset meta information
+Update dataset_info.ini for corpus-specific information.
 """
-info = {
-    "title": "European Parliament Proceedings Parallel Corpus",
-    "short_title" : "Europarl", 
-    "url": "http://www.statmt.org/europarl/",
-    "replication_url" : "https://github.com/thoppe/The-Pile-EuroParl",
-    "min_year": 1996,
-    "max_year": 2011,
-    "language" : "21 European languages: Romanic (French, Italian, Spanish, Portuguese, Romanian), Germanic (English, Dutch, German, Danish, Swedish), Slavik (Bulgarian, Czech, Polish, Slovak, Slovene), Finni-Ugric (Finnish, Hungarian, Estonian), Baltic (Latvian, Lithuanian), and Greek",
-}
+
+config = configparser.ConfigParser()
+config.read("dataset_info.ini")
+info = dict(config["corpus"])
+
 
 f_dataset = "EuroParliamentProceedings_1996_2011.jsonl"
 f_compressed = "EuroParliamentProceedings_1996_2011.jsonl.zst"
@@ -53,7 +50,7 @@ save_dest = Path("docs")
 save_dest.mkdir(exist_ok=True)
 
 f_info = save_dest / "dataset_information.json"
-f_markdown = save_dest / (Path(f_dataset).name + '.md')
+f_markdown = save_dest / (Path(f_dataset).name + ".md")
 
 if Path(f_info).exists():
     with open(f_info) as FIN:
@@ -119,7 +116,7 @@ text = info["sample_data"]["text"].strip()
 
 # Now build a nice markdown version of the datafile
 
-MD = f'''
+MD = f"""
 # {info['title']}
 
 | {info["short_title"]}  |  |
@@ -151,8 +148,7 @@ MD = f'''
 | ---             | :---   |
 | Compressed | `{info["file_information"]["compressed"]["sha256_hash"]}` |
 | Uncompressed | `{info["file_information"]["uncompressed"]["sha256_hash"]}` |
-'''
+"""
 
-with open(f_markdown, 'w') as FOUT:
+with open(f_markdown, "w") as FOUT:
     FOUT.write(MD)
-
