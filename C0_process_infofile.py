@@ -12,6 +12,7 @@ info = {
     "title": "European Parliament Proceedings Parallel Corpus",
     "short_title" : "Europarl", 
     "url": "http://www.statmt.org/europarl/",
+    "replication_url" : "https://github.com/thoppe/The-Pile-EuroParl",
     "min_year": 1996,
     "max_year": 2011,
     "language" : "Mixed",
@@ -48,7 +49,7 @@ def measure_file(f):
 
 
 # Create an infofile if it doesn't exist, otherwise read prior values
-save_dest = Path("doc")
+save_dest = Path("docs")
 save_dest.mkdir(exist_ok=True)
 
 f_info = save_dest / "dataset_information.json"

@@ -2,6 +2,7 @@
   "title": "European Parliament Proceedings Parallel Corpus",
   "short_title": "Europarl",
   "url": "http://www.statmt.org/europarl/",
+  "replication_url": "https://github.com/thoppe/The-Pile-EuroParl",
   "min_year": 1996,
   "max_year": 2011,
   "language": "Mixed",
