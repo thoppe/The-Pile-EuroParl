@@ -125,6 +125,7 @@ MD = f'''
 | {info["short_title"]}  |  |
 | ---             | ---:   |
 | Reference URL   | {info["url"]} |
+| Replication URL | {info["replication_url"]} |
 | Uncompressed file size | {info["file_information"]["uncompressed"]["size"]:,} |
 | Year range | {info["min_year"]} - {info["max_year"]} |
 | Primary language | {info["language"]} |

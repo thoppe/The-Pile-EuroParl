@@ -4,6 +4,7 @@
 | Europarl  |  |
 | ---             | ---:   |
 | Reference URL   | http://www.statmt.org/europarl/ |
+| Replication URL | https://github.com/thoppe/The-Pile-EuroParl |
 | Uncompressed file size | 4,940,726,841 |
 | Year range | 1996 - 2011 |
 | Primary language | Mixed |
