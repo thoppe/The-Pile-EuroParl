@@ -2,7 +2,7 @@
 
 Download, parse, and filter the [European Parliament Proceedings](http://www.statmt.org/europarl/), data-ready for [The-Pile](https://github.com/EleutherAI/The-Pile).
 
-[Stat Sheet](docs/EuroParliamentProceedings_1996_2011.jsonl.md)
+[**Stat Sheet**](docs/EuroParliamentProceedings_1996_2011.jsonl.md)
 
 The Europarl parallel corpus is extracted from the proceedings of the European Parliament. It includes versions in 21 European languages: Romanic (French, Italian, Spanish, Portuguese, Romanian), Germanic (English, Dutch, German, Danish, Swedish), Slavik (Bulgarian, Czech, Polish, Slovak, Slovene), Finni-Ugric (Finnish, Hungarian, Estonian), Baltic (Latvian, Lithuanian), and Greek.
 
