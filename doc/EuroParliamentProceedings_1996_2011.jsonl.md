@@ -11,7 +11,7 @@
 
 ### Sample Text (found at row 20003)
 
-```
+```text
 Opening of the sitting
 (The sitting was opened at 9 a.m.)
 Daniel Cohn-Bendit
@@ -26,7 +26,7 @@ Mrs Lulling, clearly this will be taken into account, because some Members are h
 
 ```
 
-### Sample meta information
+### Sample meta information (found at row 20003)
 
 ```json
 {
@@ -34,7 +34,7 @@ Mrs Lulling, clearly this will be taken into account, because some Members are h
 }
 ```
 
-### Checksums, sha256sum
+### SHA256 checksums
 
 | Filename             | Checksum |
 | ---             | :---   |

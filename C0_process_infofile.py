@@ -128,17 +128,17 @@ MD = f'''
 
 ### Sample Text (found at row {sample_row_n})
 
-```
+```text
 {info["sample_data"]["text"]}
 ```
 
-### Sample meta information
+### Sample meta information (found at row {sample_row_n})
 
 ```json
 {meta_pp}
 ```
 
-### Checksums, sha256sum
+### SHA256 checksums
 
 | Filename             | Checksum |
 | ---             | :---   |
