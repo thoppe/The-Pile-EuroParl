@@ -15,7 +15,7 @@ info = {
     "replication_url" : "https://github.com/thoppe/The-Pile-EuroParl",
     "min_year": 1996,
     "max_year": 2011,
-    "language" : "Mixed",
+    "language" : "21 European languages: Romanic (French, Italian, Spanish, Portuguese, Romanian), Germanic (English, Dutch, German, Danish, Swedish), Slavik (Bulgarian, Czech, Polish, Slovak, Slovene), Finni-Ugric (Finnish, Hungarian, Estonian), Baltic (Latvian, Lithuanian), and Greek",
 }
 
 f_dataset = "EuroParliamentProceedings_1996_2011.jsonl"
