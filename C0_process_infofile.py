@@ -131,9 +131,8 @@ MD = f'''
 
 ### Sample Text (found at row {sample_row_n})
 
-```text
-{info["sample_data"]["text"].strip()}
-```
+{text}
+
 
 ### Sample meta information (found at row {sample_row_n})
 

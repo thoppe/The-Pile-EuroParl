@@ -12,19 +12,18 @@
 
 ### Sample Text (found at row 20003)
 
-```text
-Opening of the sitting
-(The sitting was opened at 9 a.m.)
-Daniel Cohn-Bendit
-- (FR) Madam President, I would like to check something with you. Apparently it was decided, at the request of the French Presidency, to control photography during President Sarkozy's speech.
-I would like to know who took this decision, who requested it, and who is in charge of photography at the European Parliament. Is it the European Parliament or the French Presidency? I would appreciate an answer before the start of the sitting.
-President
-Mr Cohn-Bendit, you will have an answer before the start of the sitting, but for now, if you do not mind, we will proceed with the voting.
-Astrid Lulling
-- (FR) Madam President, as Quaestor of this Parliament, I would like to draw your attention to the fact that the route to the Parliament entrance is blocked on one side by riot police. They are not allowing official cars to enter. If some Members arrive late because they have to make another detour, they should not be penalised if they cannot take part in the voting.
-President
-Mrs Lulling, clearly this will be taken into account, because some Members are having difficulty in being admitted to Parliament.
-```
+> Opening of the sitting
+> (The sitting was opened at 9 a.m.)
+> Daniel Cohn-Bendit
+> - (FR) Madam President, I would like to check something with you. Apparently it was decided, at the request of the French Presidency, to control photography during President Sarkozy's speech.
+> I would like to know who took this decision, who requested it, and who is in charge of photography at the European Parliament. Is it the European Parliament or the French Presidency? I would appreciate an answer before the start of the sitting.
+> President
+> Mr Cohn-Bendit, you will have an answer before the start of the sitting, but for now, if you do not mind, we will proceed with the voting.
+> Astrid Lulling
+> - (FR) Madam President, as Quaestor of this Parliament, I would like to draw your attention to the fact that the route to the Parliament entrance is blocked on one side by riot police. They are not allowing official cars to enter. If some Members arrive late because they have to make another detour, they should not be penalised if they cannot take part in the voting.
+> President
+> Mrs Lulling, clearly this will be taken into account, because some Members are having difficulty in being admitted to Parliament.
+
 
 ### Sample meta information (found at row 20003)
 
