@@ -13,6 +13,7 @@ info = {
     "url": "http://www.statmt.org/europarl/",
     "min_year": 1996,
     "max_year": 2011,
+    "language" : "Mixed",
 }
 
 f_dataset = "EuroParliamentProceedings_1996_2011.jsonl"
@@ -113,7 +114,6 @@ with open(f_info, "w") as FOUT:
 
 print(js)
 text = info["sample_data"]["text"].strip()
-text = '> ' + '\n> '.join(text.split('\n'))
 
 # Now build a nice markdown version of the datafile
 
@@ -125,14 +125,16 @@ MD = f'''
 | Reference URL   | {info["url"]} |
 | Uncompressed file size | {info["file_information"]["uncompressed"]["size"]:,} |
 | Year range | {info["min_year"]} - {info["max_year"]} |
+| Primary language | {info["language"]} |
 | Document count  | {info["corpus_statistics"]["total_documents"]:,} |
 | Word count      | {info["corpus_statistics"]["total_word_count"]:,} |
 | Character count | {info["corpus_statistics"]["total_character_count"]:,} |
 
 ### Sample Text (found at row {sample_row_n})
 
+```text
 {text}
-
+```
 
 ### Sample meta information (found at row {sample_row_n})
 
@@ -144,7 +146,7 @@ MD = f'''
 
 | Filename             | Checksum |
 | ---             | :---   |
-| Compressed | `{info["file_information"]["uncompressed"]["sha256_hash"]}` |
+| Compressed | `{info["file_information"]["compressed"]["sha256_hash"]}` |
 | Uncompressed | `{info["file_information"]["uncompressed"]["sha256_hash"]}` |
 '''
 
