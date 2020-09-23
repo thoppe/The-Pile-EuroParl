@@ -10,6 +10,7 @@ Update these lines for the dataset meta information
 """
 info = {
     "title": "European Parliament Proceedings Parallel Corpus",
+    "short_title" : "Europarl", 
     "url": "http://www.statmt.org/europarl/",
     "min_year": 1996,
     "max_year": 2011,
@@ -120,7 +121,7 @@ text = info["sample_data"]["text"].strip()
 MD = f'''
 # {info['title']}
 
-| Key             | Value |
+| {info["short_title"]}  |  |
 | ---             | ---:   |
 | Reference URL   | {info["url"]} |
 | Uncompressed file size | {info["file_information"]["uncompressed"]["size"]:,} |

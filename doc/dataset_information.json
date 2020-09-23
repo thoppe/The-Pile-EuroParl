@@ -1,8 +1,10 @@
 {
   "title": "European Parliament Proceedings Parallel Corpus",
+  "short_title": "Europarl",
   "url": "http://www.statmt.org/europarl/",
   "min_year": 1996,
   "max_year": 2011,
+  "language": "Mixed",
   "file_information": {
     "uncompressed": {
       "filename": "EuroParliamentProceedings_1996_2011.jsonl",
